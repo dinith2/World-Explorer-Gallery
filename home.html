@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        body{
+            background-color: #99bae0;
+        }
+       img {
+            width: 100px;
+        }
+        
+        #products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .product {
+            margin: 10px 5px; 
+            
+        }
+       #title{
+        text-align: center;
+       }
+       .banner {
+        background-color: #2b86ee; 
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .cartbox{
+        background-color: #5498e6;
+    }
+    .account{
+        color: #084181;
+    }
+
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <h1>E-Store</h1>
+    </div>
+    <h2 class="account">Create Account</h2>
+    <form action="create_account.php" method="POST">
+        <input type="text" name="firstname" placeholder="First Name" required><br>
+        <input type="text" name="lastname" placeholder="Last Name" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="text" name="address" placeholder="Address" required><br>
+        <input type="text" name="phone" placeholder="Phone Number" required><br>
+        <input type="submit" value="Create Account">
+    </form>
+
+    <h2 class="account">Login</h2>
+    <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Login">
+    </form>
+     <div class="cartbox">
+    <div id="cart">
+    </div>
+    <div id="products">
+        
+        <div class="product">
+            <img src="5581.jpg" alt="Product 1">
+            <p>$10</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="5586.jpg" alt="Product 2">
+            <p>$15</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8358.jpg" alt="Product 3">
+            <p>$20</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8359.jpg" alt="Product 4">
+            <p>$20</p>
+            <button onclick="addToCart(4)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8360.jpg" alt="Product 5">
+            <p>$20</p>
+            <button onclick="addToCart(5)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8361.jpg" alt="Product 6">
+            <p>$20</p>
+            <button onclick="addToCart(6)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8364.jpg" alt="Product 7">
+            <p>$20</p>
+            <button onclick="addToCart(7)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8365.jpg" alt="Product 8">
+            <p>$20</p>
+            <button onclick="addToCart(8)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8366.jpg" alt="Product 9">
+            <p>$20</p>
+            <button onclick="addToCart(9)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8367.jpg" alt="Product 10">
+            <p>$20</p>
+            <button onclick="addToCart(10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8368.jpg" alt="Product 11">
+            <p>$20</p>
+            <button onclick="addToCart(11)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8369.jpg" alt="Product 12">
+            <p>$20</p>
+            <button onclick="addToCart(12)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8371.jpg" alt="Product 13">
+            <p>$20</p>
+            <button onclick="addToCart(13)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8372.jpg" alt="Product 14">
+            <p>$20</p>
+            <button onclick="addToCart(14)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8375.jpg" alt="Product 15">
+            <p>$20</p>
+            <button onclick="addToCart(15)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8378.jpg" alt="Product 16">
+            <p>$20</p>
+            <button onclick="addToCart(16)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8379.jpg" alt="Product 17">
+            <p>$20</p>
+            <button onclick="addToCart(17)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8380.jpg" alt="Product 18">
+            <p>$20</p>
+            <button onclick="addToCart(18)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8381.jpg" alt="Product 19">
+            <p>$20</p>
+            <button onclick="addToCart(19)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="8382.jpg" alt="Product 20">
+            <p>$20</p>
+            <button onclick="addToCart(20)">Add to Cart</button>
+        </div>
+        
+    </div>
+</div>
+    
+</body>
+</html>
